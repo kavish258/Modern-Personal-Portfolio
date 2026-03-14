@@ -1,3 +1,10 @@
+const navLink = [
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#experience", label: "Experience" },
+    { href: "#testimonials", label: "Testimonials" },
+]
+
 export const Navbar = () => {
     return <header>
         <nav>
@@ -7,9 +14,9 @@ export const Navbar = () => {
             {/*Desktop Nav*/}
             <div>
                 <div>
-                    
-                </div>
 
+
+                </div>
             </div>
         </nav>
     </header>;
