@@ -1,5 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { useState } from "react";
 
 const projects = [
     {
@@ -52,6 +53,10 @@ const projects = [
 ];
 
 export const Projects = () => {
+
+    const [showAll, setShowAll] = useState(false);
+    const visibleProjects = showAll ? projects : projects.slice(0, 4);
+
     return (
     <section id="projects" className="py-32 relative overflow-hidden">
         {/* Bg glows */}
@@ -78,7 +83,7 @@ export const Projects = () => {
             </div>
             {/* Projects Grid */}
             <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, idx) => (
+            {visibleProjects.map((project, idx) => (
             <div
               key={idx}
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
@@ -145,7 +150,7 @@ export const Projects = () => {
         </div>
                 {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
+          <AnimatedBorderButton onClick={() => setShowAll(true)} >
             View All Projects
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
