@@ -1,7 +1,7 @@
-import { ArrowRight, Download , Github ,Linkedin,Facebook,
-     ChevronDown } from "lucide-react";
+import { ArrowRight, Download , Github ,Linkedin,Facebook, ChevronDown } from "lucide-react";
 import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+
 
 const skills = [
   "React",
@@ -20,6 +20,7 @@ const skills = [
   "Git",
   "GitHub Actions",
 ];
+
 
 export const Hero = () => {
   return (
