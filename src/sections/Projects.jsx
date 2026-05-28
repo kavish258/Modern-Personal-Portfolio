@@ -11,6 +11,7 @@ const projects = [
     link: "#",
     github: "https://github.com/kavish258/Full-Stack-Movie-Ticket-Booking-App",  
     },
+    
     {
     title: "Responsive-Coffee-Website",
     description:
@@ -29,6 +30,25 @@ const projects = [
     link: "#",
     github: "https://github.com/kavish258/Modern-Personal-Portfolio",
   },
+      {
+    title: "Mednova Health Website Group Project",
+    description:
+      "Developed a modern healthcare management platform that helps patients book appointments, access medical services, and manage health records efficiently through a secure and user-friendly system.",
+    image: "/projects/mednova.png",
+    tags: ["Html", "Css", "JavaScript"],
+    link: "#",
+    github: "https://github.com/kavish258/Mednova-Health-Website-Group-Project",  
+    },
+         {
+    title: "Build ChatGPT In React JS Using OpenAI API",
+    description:
+      "Developed an AI-powered ChatGPT clone with real-time conversational capabilities, modern responsive UI, and intelligent response generation using advanced API integration.",
+    image: "/projects/chatgpt.png",
+    tags: ["React", "Next.js", "Figma", "Tailwind CSS"],
+    link: "#",
+    github: "https://github.com/kavish258/Build-ChatGPT-In-React-JS-Using-OpenAI-API",  
+    },
+  
 ];
 
 export const Projects = () => {
